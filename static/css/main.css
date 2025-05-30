@@ -1,0 +1,66 @@
+:root {
+    --navbar-height: 72px;
+    --navbar-bg-color: rgba(174, 224, 233, 0.8);
+    --navbar-hover-color: gold;
+    --navbar-hover-bg-color: rgb(19, 104, 117);
+    --navbar-brand-img-height: 64px;
+    --navbar-link-margin-left: 20px;
+    --navbar-link-font-size: 1.2rem;
+    --carousel-img-hover-scale: 1.1;
+    --carousel-img-blur: 1px;
+    --carousel-caption-bg-color: rgba(0, 0, 0, 0.4);
+    --carousel-caption-border-radius: 5px;
+    --carousel-caption-padding: 10px;
+}
+
+h1 {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+}
+
+.page-title {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #2C3E50;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: var(--navbar-height);
+  height: 3.1rem;
+}
+
+.page-title .dynamic-title {
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.page-title .dynamic-title:hover {
+    color: #4e72e9;
+    transform: scale(1.1);
+}
+
+
+.navbar{
+  height: var(--navbar-height);
+  background-color: rgba(174, 224, 233, 0.8);
+  border-radius: 0px 0px 10px 18px;
+}
+.navbar-nav .nav-link:hover {
+  /* color: #37ac9a !important;  Mars Green color */
+  color: gold !important;
+  font-weight: bold;
+  background-color: rgb(19, 104, 117);
+  border-radius: 10px;
+}
+.navbar-brand img {
+  margin-left: 15px;
+  height: 64px;
+  margin-right: 8px;
+}
+.navbar-nav .nav-link {
+  margin-left: 20px;
+  font-size: var(--navbar-link-font-size);
+}

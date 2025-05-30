@@ -1,0 +1,81 @@
+
+.carousel-item {
+    height: 100vh; /* 可自行调整 */
+    min-height: 400px;
+    position: relative;
+  }
+  .news-more-link {
+    width: 100%;
+    margin: auto;
+  }
+  .news-more-link a {
+    width: 100%;
+  }
+  /* 让图片自适应铺满 */
+  .carousel-item img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease;
+    filter: blur(1px);
+    border-radius: 10px;
+  }
+  /* 悬停放大图片 */
+  .carousel-item img:hover {
+    transform: scale(1.05);
+    filter: blur(0);
+  }
+  /* 文字区域居中 */
+  .carousel-caption {
+    /* background-color: rgba(0, 0, 0, 0.4); 让文字更明显 */
+    border-radius: 5px;
+    padding: 10px;
+
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: auto;
+  }
+  /* 设置文字样式及悬停放大效果 */
+  .carousel-caption h1,
+  .carousel-caption h4,
+  .carousel-caption p {
+    font-family: 'Montserrat', sans-serif;
+    transition: transform 0.5s ease;
+    font-weight: bold;
+  }
+  .carousel-caption h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .carousel-caption p {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-top: 1rem;
+  }
+  .carousel-caption:hover h1,
+  .carousel-caption:hover h4,
+  .carousel-caption:hover p {
+    transform: scale(1.1);
+  }
+
+  .card-title {
+    font-family: "Georgia", serif; 
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    color: #333; 
+    margin-bottom: 8px;
+  }
+
+  .card-text {
+    font-family: "Arial", sans-serif; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    color: #555; 
+  }
+  
+  /* Meet the Team 部分的样式 */
+  .meet-team-section {
+    background: #f8f9fa;
+    padding: 100px 0; 
+    text-align: center;
+  }

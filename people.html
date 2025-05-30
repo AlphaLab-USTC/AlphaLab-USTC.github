@@ -1,0 +1,473 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>AlphaLab</title>
+  <link rel="icon" href="/static/images/favicon.ico" type="image/x-icon">
+  <!-- 引入 Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+
+      <a class="navbar-brand" href="./index.html">
+          <img src="./static/images/logo_.png" alt="AlphaLab Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html">
+              <i class="fa-solid fa-house"></i>
+              Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./news.html">
+              <i class="fa-solid fa-newspaper"></i>
+              News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./people.html">
+              <i class="fa-solid fa-user"></i>
+              People</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" href="/publications">Publications</a>
+          </li> -->
+          <li class="nav-item">
+            <a class="nav-link" href="./gallery.html">
+              <i class="fa-solid fa-images"></i>
+              Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./resources.html">
+              <i class="fa-solid fa-file-powerpoint"></i>
+              Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">
+              <i class="fa-solid fa-envelope"></i>
+              Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- 主体内容 -->
+  <div>
+    
+
+<link rel="stylesheet" href="./static/css/people.css">
+
+<div class="container">
+    <div class="page-title">
+        <h1 class="dynamic-title">PEOPLE...</h1>
+    </div>
+    <div class="people-list">
+        <!-- 盛乐恒的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/shengleheng.png" alt="Sheng Leheng" class="profile-image">
+
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">盛乐恒 Sheng Leheng</h2>
+                <p class="position">Intern（2022-2024） → NUS PhD（2024-now）</p>
+                <p class="links">
+                    <a href="https://lehengthu.github.io/" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=j4ZcRakAAAAJ&hl=zh-CN" target="_blank">
+                        <img src="./static/images/googlescholar.png" alt="Google Scholar" width="24" height="24">
+                    </a>
+                    <a href="https://github.com/LehengTHU" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="mailto:lehengsheng0418@gmail.com">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        lehengsheng0418@gmail.com
+                    </a>
+                </p>
+                <div class="achievements">
+                    <h3><img src="./static/images/Achievement.png" width="24" height="24">Achievements:</h3>
+                    <ul>
+                        <li>2025: ICLR’25 oral (Top 1.8%) – <a href="https://arxiv.org/pdf/2407.05441" target="_blank">AlphaRec</a></li>
+                        <li>2024: SIGIR‘24 – <a href="https://arxiv.org/abs/2310.10108" target="_blank">Agent4Rec</a></li>
+                        <li>2023: NeurIPS’23 – <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/13f1750b825659394a6499399e7637fc-Paper-Conference.pdf" target="_blank">AdvInfoNCE</a></li>
+                    </ul>
+                </div>
+                <div class="highlights">
+                    <h3><img src="./static/images/highlight.png" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li>Competition: 2nd Place (2/295 teams) @ AgentSociety Challenge - WWW 2025</li>
+                        <li>Tutorial: Generative Recommendation Models: Progress and Directions - WWW 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 郑静楠的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/zhengjingnan.png" alt="Sheng Leheng" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">郑静楠 Zheng Jingnan</h2>
+                <p class="position">Intern（2022-2024） -> NUS PhD（2024-now）</p>
+                <p class="links">
+                    <a href="https://sophiezheng998.github.io/" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=UlgiSa0AAAAJ&hl=en" target="_blank">
+                        <img src="./static/images/googlescholar.png" alt="Google Scholar" width="24" height="24">
+                    </a>
+                    <a href="https://github.com/SophieZheng998" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="mailto:jingnan.zheng@u.nus.edu">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        jingnan.zheng@u.nus.edu
+                    </a>
+                </p>
+                <div class="achievements">
+                    <h3><img src="./static/images/Achievement.png" width="24" height="24">Achievements:</h3>
+                    <ul>
+                        <li>2024: NeurIPS'24  – <a href="https://arxiv.org/pdf/2405.14125" target="_blank">ALI-Agent</a></li>
+                        <li>2024: ASE'24  – <a href="https://dl.acm.org/doi/pdf/10.1145/3691620.3695008" target="_blank">MaskDroid</a></li>
+                        <li>2023: WWW'23 – <a href="https://dl.acm.org/doi/pdf/10.1145/3543507.3583461" target="_blank">InvCF</a></li>
+                    </ul>
+                </div>
+                <div class="highlights">
+                    <h3><img src="./static/images/highlight.png" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li>Research Achievement Award certificate from National University of Singapore (2025)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 陈宇昕的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/chenyuxin.png" alt="Sheng Leheng" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">陈宇昕 Chen Yuxin</h2>
+                <p class="position">Intern（2023-2024） -> NUS PhD（2024-now）</p>
+                <p class="links">
+                    <a href="https://scholar.google.com/citations?user=krdkLawAAAAJ&hl=en" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=krdkLawAAAAJ&hl=en" target="_blank">
+                        <img src="./static/images/googlescholar.png" alt="Google Scholar" width="24" height="24">
+                    </a>
+                    <a href="https://github.com/chenyuxin1999" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="mailto:yuxin.chen@u.nus.edu">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        yuxin.chen@u.nus.edu
+                    </a>
+                </p>
+                <div class="achievements">
+                    <h3><img src="./static/images/Achievement.png" width="24" height="24">Achievements:</h3>
+                    <ul>
+                        <li>2024: NeurIPS'24  – <a href="https://arxiv.org/abs/2406.09215" target="_blank">S-DPO</a></li>
+                        <li>2024: SIGIR'24  – <a href="https://arxiv.org/abs/2310.10108" target="_blank">Agent4Rec</a></li>
+                    </ul>
+                </div>
+                <div class="highlights">
+                    <h3><img src="./static/images/highlight.png" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li>Competition: 2nd Place (2/295 teams) @ AgentSociety Challenge - WWW 2025</li>
+                        <li>Awarded President’s Graduate Fellowship by National University of Singapore.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 何颖智的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/heyingzhi.png" alt="He Yingzhi" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">何颖智 He Yingzhi</h2>
+                <p class="position">NUS PhD（2023-now）</p>
+                <p class="links">
+                    <a href="https://scholar.google.com/citations?user=zyfCE90AAAAJ&hl=en" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=zyfCE90AAAAJ&hl=en" target="_blank">
+                        <img src="./static/images/googlescholar.png" alt="Google Scholar" width="24" height="24">
+                    </a>
+                    <a href="https://github.com/HappyPointer" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="mailto:heyingzhi@u.nus.edu">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        heyingzhi@u.nus.edu
+                    </a>
+                </p>
+                <div class="achievements">
+                    <h3><img src="./static/images/Achievement.png" width="24" height="24">Achievements:</h3>
+                    <ul>
+                        <li>2024: MM'24  – <a href="https://arxiv.org/html/2404.01735v1" target="_blank">CIRP</a></li>
+                        <li>2023: TOIS  – <a href="https://arxiv.org/abs/2311.16751" target="_blank">MultiCBR</a></li>
+                        <li>2022: KDD'22  – <a href="https://arxiv.org/pdf/2206.00242" target="_blank">CrossCBR</a></li>
+                    </ul>
+                </div>
+                <div class="highlights">
+                    <h3><img src="./static/images/highlight.png" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li>Awarded Graduate Research Fellowship by National University of Singapore</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 刘硕的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/liushuo.png" alt="Liu Shuo" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">刘硕 Liu Shuo</h2>
+                <p class="position">ECNU (2022-2025) -> NUS Intern (2024-2025) </p>
+                <p class="links">
+                    <a href="https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=sRoqbLwAAAAJ&hl=en" target="_blank">
+                        <img src="./static/images/googlescholar.png" alt="Google Scholar" width="24" height="24">
+                    </a>
+                    <a href="https://github.com/lswhim" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="lswhim2000@gmail.com">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        lswhim2000@gmail.com
+                    </a>
+                </p>
+                <div class="achievements">
+                    <h3><img src="./static/images/Achievement.png" alt="Email" width="24" height="24">Achievements:</h3>
+                    <ul>
+                        <li>2024: ICLR'25  – <a href="https://arxiv.org/abs/2410.13117" target="_blank">PreferDiff</a></li>
+                    </ul>
+                </div>
+                <div class="highlights">
+                    
+                    <h3><img src="./static/images/highlight.png" alt="Email" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li>Competition: 1st Place (1/352 teams) @ Causal Structure Learning  Challenge - NeurIPS 2023</li>
+                        <li>Awarded National Scholarship by East China Normal University</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 张易的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/zhangyi.png" alt="Zhang Yi" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">张易 Yi Zhang</h2>
+                <p class="position">USTC（2021-2025） -> NUS Intern（2024-now）-> LDS@USTC (2025-now) </p>
+                <p class="links">
+                    <a href="https://zy20031230.github.io/" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    <a href="" target="_blank">
+                        <img src="./static/images/googlescholar.png" alt="Google Scholar" width="24" height="24">
+                    </a>
+                    <a href="https://github.com/zy20031230" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="zy1230@mail.ustc.edu.cn">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        zy1230@mail.ustc.edu.cn
+                    </a>
+                </p>
+                
+                <div class="highlights">
+                    
+                    <h3><img src="./static/images/highlight.png" alt="Email" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li>Competition: 2nd Place (2/295 teams) @ AgentSociety Challenge - WWW 2025</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 崔晨航的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/cuichenhang.png" alt="Chenhang Cui" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">崔晨航 Chenhang Cui</h2>
+                <p class="position">ECNU (2022-2025) -> NUS Intern (2024-2025)UESTC（2021-2025） -> NUS Intern（2024-now） </p>
+                <p class="links">
+                    <a href="https://gzcch.github.io" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    <a href="https://scholar.google.com/citations?user=V5X1gdAAAAAJ" target="_blank">
+                        <img src="./static/images/googlescholar.png" alt="Google Scholar" width="24" height="24">
+                    </a>
+                    <a href="https://github.com/gzcch" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="chenhangcui@gmail.com">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        chenhangcui@gmail.com
+                    </a>
+                </p>
+                <div class="achievements">
+                    <h3><img src="./static/images/Achievement.png" alt="Email" width="24" height="24">Achievements:</h3>
+                    <ul>
+                        <li>NeurIPS 2023  – <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/8c64bc3f7796d31caa7c3e6b969bf7da-Paper-Conference.pdf" target="_blank">link</a></li>
+                        <li>ICLR 2024  – <a href="https://arxiv.org/pdf/2310.00754" target="_blank">link</a></li>
+                        <li>ICLR 2025  – <a href="https://arxiv.org/pdf/2410.14148" target="_blank">link</a></li>
+                    </ul>
+                </div>
+                <div class="highlights">
+                    
+                    <h3><img src="./static/images/highlight.png" alt="Email" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li> SenseTime Scholarship 2024</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 谭骏飞的卡片 -->
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/tanjunfei.png" alt="Chenhang Cui" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">谭骏飞 Junfei Tan</h2>
+                <p class="position">USTC（2020-2024） </p>
+                <p class="links">
+                    <a href="https://github.com/sober-clever" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    
+                    <a href="https://github.com/sober-clever" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="sober_clever@mail.ustc.edu.cn">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        sober_clever@mail.ustc.edu.cn
+                    </a>
+                </p>
+                <div class="achievements">
+                    <h3><img src="./static/images/Achievement.png" alt="Email" width="24" height="24">Achievements:</h3>
+                    <ul>
+                        <li>2024: NeurIPS’24  – <a href="https://arxiv.org/abs/2406.09215" target="_blank">S-DPO</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/zhangyanxin.png" alt="Zhang Yanxin" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">张艳莘 Zhang Yanxin</h2>
+                <p class="position">NUS Master Intern(2024-2025) </p>
+                <p class="links">
+                    <a href="https://github.com/ChelseaYanxin" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    
+                    <a href="https://github.com/ChelseaYanxin" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="e1373882@u.nus.edu">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        e1373882@u.nus.edu
+                    </a>
+                </p>
+                <div class="highlights">
+                    
+                    <h3><img src="./static/images/highlight.png" alt="Email" width="24" height="24">Highlights:</h3>
+                    <ul>
+                        <li> NUS Dean's List 2025</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="person-card">
+            <div class="image-container">
+                <img src="./static/images/people/shenchangshuo.png" alt="Shen Changshuo" class="profile-image">
+            </div>
+            <div class="info-container">
+                <h2 class="person-name">申长硕 Shen Changshuo</h2>
+                <p class="position">USTC (2022-2026) </p>
+                <p class="links">
+                    <a href="https://changshuoshen.github.io/" target="_blank">
+                        <img src="./static/images/homepage.png" alt="Homepage" width="24" height="24">
+                    </a>
+                    
+                    <a href="https://github.com/ChangshuoShen" target="_blank">
+                        <img src="./static/images/github.png" alt="GitHub" width="24" height="24">
+                    </a>
+                </p>
+                <p class="email">
+                    <a href="e1373882@u.nus.edu">
+                        <img src="./static/images/email.png" alt="Email" width="24" height="24">
+                        stephenshenc@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+    
+<script>
+    // 
+    document.addEventListener('DOMContentLoaded', function() {
+        // 
+    });
+</script>
+
+    
+  </div>
+
+  <!-- 引入 Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>
