@@ -16,5 +16,4 @@ function typeTitle() {
     }
 }
 
-
 typeTitle();

@@ -13,6 +13,72 @@
     flex-wrap: wrap;
     gap: 20px;
 }
+
+.advisor-card {
+    display: flex;
+    flex-direction: column; /* Change to column to stack items vertically */
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    justify-content: center; /* Center align each line */
+    text-align: center; /* Center align text */
+    width: calc(100% - 40px); /* Adjust width to fit one card per row */
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.advisor-basic-info {
+    display: flex;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.advisor-card .description {
+    width: 100%; /* Make description take 100% width */
+    margin-top: 20px; /* Add some space between the description and the previous element */
+    text-align: left;
+}
+
+.advisor-card::before, .advisor-card::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: -1;
+}
+
+.advisor-card::before {
+    top: -50%;
+    left: 0;
+    transform: rotate(45deg);
+    border-bottom: none;
+    border-right: none;
+}
+
+.advisor-card::after {
+    bottom: -50%;
+    left: 0;
+    transform: rotate(-45deg);
+    border-top: none;
+    border-left: none;
+}
+.advisor-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
 .person-card {
     display: flex;
     background-color: white;
