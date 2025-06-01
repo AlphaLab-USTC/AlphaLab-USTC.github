@@ -1,6 +1,5 @@
 /* 整个新闻列表容器 */
 #news-container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -35,7 +34,6 @@
 
 .news-image-container img {
     width: 100%;
-    max-height: 120px; /* 控制图片最大高度 */
     object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -63,10 +61,29 @@
 
 /* 作者列表样式 */
 .author-list {
+    display: flex;
+    gap: 1rem;
     font-size: 1rem;
     color: #666;
     margin-bottom: 1rem;
+    align-items: center;
+}
+
+.author-date {
     font-style: italic;
+    padding-right: 1rem;
+    border-right: 1px solid #ddd;
+}
+
+.author-names {
+    font-style: italic;
+    padding-right: 1rem;
+    border-right: 1px solid #ddd;
+}
+
+.author-venue {
+    font-style: italic;
+    color: #37ac9a;
 }
 
 .news-description {
