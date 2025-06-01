@@ -28,7 +28,25 @@
     width: 100%;
 }
 
-/* 左侧文字区域 */
+/* 左侧图片区域 */
+.news-image-container {
+    margin-top: 1rem;
+}
+
+.news-image-container img {
+    width: 100%;
+    max-height: 120px; /* 控制图片最大高度 */
+    object-fit: cover;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.news-image-container img:hover {
+    transform: scale(1.01);
+}
+
+/* 右侧文字区域 */
 .news-content h2 {
     font-size: 1.75rem;
     margin-bottom: 0.75rem;
@@ -56,40 +74,22 @@
     font-style: italic;
 }
 
-/* 图片区域 */
-.news-image-container {
-    margin-top: 1rem;
-}
-
-.news-image-container img {
-    width: 100%;
-    max-height: 120px; /* 控制图片最大高度 */
-    object-fit: cover;
-    border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.news-image-container img:hover {
-    transform: scale(1.01);
-}
-
 /* 大屏幕下，两部分采用左右布局，且中间加分隔线 */
 @media (min-width: 768px) {
     .news-item {
         display: grid;
-        grid-template-columns: 2fr 1fr; /* 左边2份，右边1份 */
+        grid-template-columns: 1fr 2fr; /* 左边1份，右边2份 */
         gap: 2rem;
         align-items: start;
     }
-    /* 左侧内容右边添加分隔线 */
+    /* 右侧内容左边添加分隔线 */
     .news-content {
-        border-right: 2px solid #e9ecef;
-        padding-right: 1rem;
-    }
-    /* 右侧图片区域左边内边距 */
-    .news-image-container {
+        border-left: 2px solid #e9ecef;
         padding-left: 1rem;
+    }
+    /* 左侧图片区域右边内边距 */
+    .news-image-container {
+        padding-right: 1rem;
         margin-top: 0;
     }
 
